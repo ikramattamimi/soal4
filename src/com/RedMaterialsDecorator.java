@@ -14,20 +14,20 @@ public class RedMaterialsDecorator extends MaterialsDecorator{
         setRedBorder();
     }
 
-    @Override
-    public void price() {
-        // TODO Auto-generated method stub
+    // @Override
+    // public void price() {
+    //     // TODO Auto-generated method stub
         
-    }
+    // }
 
     public void setRedBorder() {
         System.out.println("Border: Red");
     }
 
-    @Override
-    public void description() {
-        // TODO Auto-generated method stub
+    // @Override
+    // public void description() {
+    //     // TODO Auto-generated method stub
         
-    }
+    // }
     
 }

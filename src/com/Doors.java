@@ -1,12 +1,11 @@
 package com;
 
-public class Beams implements Materials{
-
+public class Doors implements Materials{
     protected String description;
     protected String part;
     protected String price;
 
-    public Beams(String part, String price, String description) {
+    public Doors(String part, String price, String description) {
         this.description = description;
         this.part = part;
         this.price = price;
@@ -32,7 +31,6 @@ public class Beams implements Materials{
         System.out.println(this.description);
     }
 
-    @Override
     public void print(){
         SamaDengan.printGP();
         part();
