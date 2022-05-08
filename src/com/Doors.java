@@ -2,43 +2,49 @@ package com;
 
 public class Doors implements Materials{
     protected String description;
-    protected String part;
+    protected String part = "Pintu";
     protected String price;
+    protected String name;
 
-    public Doors(String part, String price, String description) {
+    public Doors(String name, String price, String description) {
         this.description = description;
-        this.part = part;
+        this.name = name;
         this.price = price;
     }
 
     @Override
-    public void part() {
+    public void name() {
         // TODO Auto-generated method stub
-        System.out.println(this.part);
+        System.out.println(this.name);
     }
     
     @Override
     public void price() {
         // TODO Auto-generated method stub
-        System.out.println("Price:");
+        System.out.println("PRICE-------------------------------------------------------------------------------------------------");
         System.out.println(this.price);
     }
     
     @Override
     public void description() {
         // TODO Auto-generated method stub
-        System.out.println("Description:");
+        System.out.println("DESCRIPTION-------------------------------------------------------------------------------------------");
         System.out.println(this.description);
     }
 
+    @Override
     public void print(){
-        SamaDengan.printGP();
-        part();
-        SamaDengan.printGP();
+        Print.SD();
+        name();
+        Print.SD();
         price();
-        System.out.println();
         description();
         System.out.println();
+    }
+    
+    @Override
+    public String getPart(){
+        return this.part;
     }
     
 }
